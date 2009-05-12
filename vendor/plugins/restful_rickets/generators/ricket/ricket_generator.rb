@@ -76,7 +76,7 @@ class RicketGenerator < Rails::Generator::NamedBase
         m.template "ricket:#{file_name}.rb", File.join( 'app/views', controller_class_path, controller_file_name, file_name )
       end
       # Layout view.
-      m.template "ricket:layout#{ html_extension }.rb", File.join( 'app/views/layouts', "#{ controller_file_name }#{ html_extension }" )
+#      m.template "ricket:layout#{ html_extension }.rb", File.join( 'app/views/layouts', "#{ controller_file_name }#{ html_extension }" )
       
       # Model class, unit test, and fixtures.
       m.template 'model:model.rb',      File.join( 'app/models', class_path, "#{file_name}.rb" )
